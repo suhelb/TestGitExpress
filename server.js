@@ -45,4 +45,4 @@ res.send("<h1>My name is suhel</h1>");
 });
 
 console.log(`Listening to ${port}`);
-app.listen(process.env.PORT);
+app.listen(port);
