@@ -2,6 +2,8 @@ const express = require("express")
 const hbs = require("hbs");
 var app = express();
 
+const port =  process.env.PORT || 3000;
+
 hbs.registerPartials(__dirname+"/views/partials");
 app.set("view engine","hbs");
 app.use(express.static(__dirname+"/public"));
@@ -40,4 +42,4 @@ app.get("/yourname",(req,res)=>{
 res.send("<h1>My name is suhel</h1>");
 });
 
-app.listen(3000);
+app.listen(port);
