@@ -3,6 +3,7 @@ const hbs = require("hbs");
 var app = express();
 
 const port =  process.env.PORT || 3000;
+console.log(`the port is ${port}`);
 
 hbs.registerPartials(__dirname+"/views/partials");
 app.set("view engine","hbs");
@@ -42,4 +43,5 @@ app.get("/yourname",(req,res)=>{
 res.send("<h1>My name is suhel</h1>");
 });
 
+console.log(`Listening to ${port}`);
 app.listen(port);
