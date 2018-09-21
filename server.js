@@ -1,3 +1,4 @@
+console.log("Server js loaded");
 const express = require("express")
 const hbs = require("hbs");
 var app = express();
